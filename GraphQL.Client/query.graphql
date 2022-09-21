@@ -1,0 +1,11 @@
+﻿mutation UploadSingleImage($input : UploadSingleImageInput!) {
+	uploadSingleImage(input: $input) {
+		string
+	}
+}
+
+mutation UploadMultipleImages($input : UploadMultipleImagesInput!) {
+	uploadMultipleImages(input: $input) {
+		string
+	}
+}

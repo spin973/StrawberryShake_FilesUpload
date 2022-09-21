@@ -1,0 +1,21 @@
+﻿@page "/"
+@inject IGraphQLClient GraphQLClient
+
+<PageTitle>Index</PageTitle>
+
+<span>Single image upload</span>
+<br />
+<InputFile OnChange="@UploadSingleImageAsync" />
+
+<br />
+@ResponseSingle
+
+<br />
+<br />
+
+<span>Multiple images upload</span>
+<br />
+<InputFile OnChange="@UploadMultipleImagesAsync" multiple />
+
+<br />
+@ResponseMultiple
